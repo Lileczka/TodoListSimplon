@@ -11,6 +11,7 @@ export interface ITodo {
   content: string;
   type: CategoryType;
   isUrgent: boolean;
+  isActive: boolean;
   doneDate: Date | null;
 }
 
@@ -20,6 +21,7 @@ export const ITODOS: ITodo[] = [
     content: '🛍️',
     type: 'shopping',
     isUrgent: false,
+    isActive: false,
     doneDate: null,
   },
   {
@@ -27,6 +29,7 @@ export const ITODOS: ITodo[] = [
     content: '💊️',
     type: 'health',
     isUrgent: false,
+    isActive: false,
     doneDate: null,
   },
   {
@@ -34,6 +37,7 @@ export const ITODOS: ITodo[] = [
     content: '💼',
     type: 'work',
     isUrgent: false,
+    isActive: false,
     doneDate: null,
   },
   {
@@ -41,6 +45,7 @@ export const ITODOS: ITodo[] = [
     content: '💸',
     type: 'bills',
     isUrgent: false,
+    isActive: false,
     doneDate: null,
   },
   {
@@ -48,6 +53,7 @@ export const ITODOS: ITodo[] = [
     content: '🧼 ',
     type: 'cleaning',
     isUrgent: false,
+    isActive: false,
     doneDate: null,
   },
   {
@@ -55,6 +61,7 @@ export const ITODOS: ITodo[] = [
     content: '🤷‍♀️',
     type: 'other',
     isUrgent: false,
+    isActive: false,
     doneDate: null,
   },
 ];

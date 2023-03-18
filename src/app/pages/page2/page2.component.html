@@ -2,12 +2,17 @@
     <div class="container">
     <p class="text left">Sélectionnez votre catégorie* :</p>
     <div class="btnBlock">
-    <button *ngFor="let todo of todos" >
+        <button [class.active]="todo.isActive" *ngFor="let todo of todos" (click)="btnActive(todo)">
         {{ todo.content }}</button>
     </div>
     <p class="text2 left">Quelle tâche avez vous à effectuer* ?</p>
-    <div class="blockText"></div>
-    <p class="text3 left">La tâche est urgente ⚠️</p>
-    <app-button></app-button>
+    <input [(ngModel)]="newTask" 
+           [placeholder]="activeTodo ? '' : 'Exemple : Faire les courses'" />
+    
+    <div class="checkblock">
+    <button class ="btnCheck"></button>
+    <p>La tâche est urgente ⚠️</p>
     </div>
-    </section>
+    <app-button [showPage2Text]="true"></app-button>
+    </div>
+</section>
