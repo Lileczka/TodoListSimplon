@@ -1,0 +1,21 @@
+.container {
+    height: 674px;
+    border: 1px solid red;
+}
+
+p {
+    font-style: normal;
+    font-weight:700;
+    color: var(--white);
+    margin-left: 26px;
+    margin-top: 37px;
+    margin-bottom: 37px;
+}
+.rond {
+    width: 23px;
+    height: 23px;
+    border: 2px solid var(--white);
+    border-radius: 50px;
+    margin-left: 28px;
+}
+

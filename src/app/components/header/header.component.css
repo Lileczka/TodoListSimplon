@@ -8,4 +8,6 @@ h2 {
     font-weight:700;
     color: var(--white);
     line-height: 25px ;
+    padding-top: 35px;
+    padding-left: 26px;
 }

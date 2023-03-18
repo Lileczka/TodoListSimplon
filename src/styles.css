@@ -19,9 +19,10 @@
 body{
     font-family: var( --quisksand);
     width: min(390px,100%);
-    height: 100vh;
+    height: 844px;
     background: var( --black );
     margin: 0 auto;
+    border: 1px solid white;
 }
 .flex{
     display: flex;

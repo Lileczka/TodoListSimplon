@@ -1,0 +1,57 @@
+.container {
+    height: 674px;
+    border: 1px solid red;
+    
+    
+    }
+    button {
+        width: 48px;
+        height: 48px;
+        background-color: aqua;
+        border-radius: 50px;
+        border: none;
+        background: rgba(255, 255, 255, 0.1);
+        margin-left: 10px;
+      
+    }
+
+    .btnBlock{
+        margin-left: -10px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .blockText {
+        width: 338px;
+        height: 182px;
+        background-color: var(--sombre);
+        margin-left: 26px;
+    }
+
+    p {
+        font-style: normal;
+        font-weight:700;
+        color: var(--white);
+    }
+ 
+    .left {
+        margin-left: 26px;
+    }
+    
+    .text , .left {
+        
+        margin-top: 37px;
+        margin-bottom: 28px;
+    }
+    .text2 , .left {
+        margin-top: 28px;
+        margin-bottom: 28px;
+    }
+
+    .text3 {
+        margin-top: 28px;
+        margin-left: 64px;
+        margin-bottom: 140px;
+    }
+
+    
