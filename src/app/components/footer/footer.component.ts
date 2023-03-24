@@ -7,6 +7,7 @@ import {NavigationEnd, Router } from '@angular/router';
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent {
+
   homePage?: string;
   isPage1 = false;
   isPage2 = false;
@@ -36,7 +37,7 @@ if (event instanceof NavigationEnd) {
       this.isPage3 = true;
       break;
     default:
-      this.isPage1 = false;
+      this.isPage1 = true;
       this.isPage2 = false;
       this.isPage3 = false;
       break;
@@ -44,13 +45,11 @@ if (event instanceof NavigationEnd) {
 }
 });
 }
-  
 goToHomePage() {
   this.router.navigateByUrl('/');
-}
-
+  }
 goToPage2() {
-  this.router.navigateByUrl('/page2');
+ this.router.navigateByUrl('/page2');
 }
 
 goToPage3() {

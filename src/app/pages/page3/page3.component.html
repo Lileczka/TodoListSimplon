@@ -1,12 +1,12 @@
 <section>
-  <div class="container">
-   
-    
-      <p>⚠️ Tâche urgentes</p>
-    
-    <ul>
-      <div class="rond"><li></li></div>
-    </ul>
-    <p>🌸 Tâches non urgentes</p>
-  </div>
+    <div class="container">
+        <p class="text2 left">Historique des tâches :</p>
+        <ul>
+            <li *ngFor="let task of selectedTasks">
+                <label class="check">
+                    <input  type="checkbox"  (click)="removeHistory(task)">
+                </label>
+                {{ task.task }}  {{ task.name }}</li>
+        </ul>
+    </div>
 </section>

@@ -18,11 +18,13 @@
     button.active {
         background-color: var(--yellow); 
     }
+
     .btnBlock{
         margin-left: -10px;
         display: flex;
         justify-content: center;
     }
+
     input  {
         width: 338px;
         height: 182px;
@@ -40,7 +42,7 @@
     input input::placeholder {
         color: rgba(255, 255, 255, 0.3);
     }
-    
+
     p {
         font-style: normal;
         font-weight:700;
@@ -67,7 +69,7 @@
         margin-bottom: 140px;
     }
 
-    .btnCheck {
+.btnCheck {
         width: 25px;
         height: 25px;
         border-radius: 50px;
@@ -76,15 +78,31 @@
         margin-left: 26px;
         margin-right: 15px;
         margin-bottom: 130px;
+}
+.btnCheck.active {
+    background-color: var(--pink);
+}
 
-    }
     
-    .checkblock {
+.checkblock {
       display: flex;
       margin-top: 20px;
     }
-
-    
+ 
+.bigBtn {
+    width: 248px;
+    height: 48px;
+    border-radius: 30px;
+    border: none;
+    background-color: var(--gris);
+    text-align: center;
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    margin-top: 32px;
+    margin-left: 70px;
+}   
 
     
     

@@ -1,6 +1,28 @@
-<section>
-<div class="container">
-<p>Aucune tâche pour le moment 🙌</p>
-<app-button (click)= "goToPage2()"></app-button>
-</div>
+<section *ngIf="!showPage">
+  <div class="container">
+    <p>Aucune tâche pour le moment 🙌</p>
+    <button (click)="goToPage2()">{{ label }}</button>
+  </div>
 </section>
+<ng-container *ngIf="showPage">
+    <div class= "container">
+      <div class= "deuxListes">
+      <p>⚠️ Tâche urgentes</p>
+     <ul class="scrollable-list">
+      <li *ngFor="let task of urgentList">
+        <label class="rond">
+        <input  type="checkbox"  (click)="removeTask(task, 'urgentList')"/>
+        </label>{{ task.task }}</li>
+     </ul >
+     <div class="tacheUrgente">
+    <p>🌸 Tâches non urgentes</p>
+    <ul class="scrollable-list">
+      <li *ngFor="let task of ordinaryList">
+        <label class="rond">
+          <input  type="checkbox"  (click)="removeTask(task, 'ordinaryList')" />
+          </label>{{ task.task }}</li>
+      </ul>
+    </div>
+    </div>
+  </div>
+  <ng-container> 
