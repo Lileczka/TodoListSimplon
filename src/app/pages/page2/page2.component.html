@@ -1,6 +1,5 @@
 <section>
-    <div class="container">
-    <p class="text left">Sélectionnez votre catégorie* :</p>
+   <p class="text left">Sélectionnez votre catégorie* :</p>
     <div class="btnBlock">
         <button [class.active]="todo.isActive" 
         *ngFor="let todo of todos" 
@@ -24,5 +23,5 @@
 [ngStyle]="{ 'background-color': isInputEmpty ? 'var(--bleu)' : '' }" 
 (click)="saveTask()" 
 [disabled]="!isInputEmpty">{{ label }}</button>
-   </div>
+ 
 </section>

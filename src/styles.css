@@ -1,32 +1,40 @@
-/* You can add global styles to this file, and also import other style files */
 :root {
-    --pink : #E475F1;
-    --yellow : #F3D24F;
-    --bleu : #64A7D9;
-    --black : #040722;
-    --sombre : #1D2038;
-    --gris :  rgba(100, 167, 217, 0.5);
-    --green :#88E7A1;
-    --white : #FFFFFF;
-    --quisksand : 'Quicksand', sans-serif;
-}
-* {
+    --pink: #e475f1;
+    --yellow: #f3d24f;
+    --bleu: #64a7d9;
+    --black: #040722;
+    --sombre: #1d2038;
+    --gris: rgba(100, 167, 217, 0.5);
+    --green: #88e7a1;
+    --white: #ffffff;
+    --quisksand: "Quicksand", sans-serif;
+  }
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
-}
-
-body{
-    font-family: var( --quisksand);
-    width: min(390px,100%);
-    height: 844px;
-    background: var( --black );
-    margin: 0 auto;
+    background-color: var(--black);
+  }
+  app-root {
+    max-height: 100vh;
+    height: 100vh;
+    /*margin: 0 auto;*/
     border: 1px solid white;
-}
-.flex{
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    flex-direction: column;
+    font-family: var(--quisksand);
+  }
+  
+  main {
+    flex: 1;
+    overflow-y: scroll;
+  }
+  
+  header {
+    height: 70px;
+  }
+  
+  footer {
+    height: 100px;
+  }
+  

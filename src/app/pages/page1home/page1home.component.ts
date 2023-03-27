@@ -23,7 +23,7 @@ export class Page1homeComponent implements OnInit {
 ngOnInit(): void {
   //afficher la pertie caché de ng-container
   this.route.queryParams.subscribe(params => {
-    this.showPage = params['showPage'] === 'true';
+    this.showPage = params['showPage'] === 'false';
   });
 }
 //passer la valeur de showPage à true

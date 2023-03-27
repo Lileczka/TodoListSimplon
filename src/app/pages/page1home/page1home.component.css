@@ -1,14 +1,10 @@
 .container {
-height: 674px;
-border: 1px solid red;
-overflow-y: auto;
-} 
-
+    margin-top:-130px;
+}
 .deuxListes {
    
     margin-top: -270px;
     margin-left: 26px;
-    
 }
 
 p {

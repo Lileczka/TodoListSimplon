@@ -1,12 +1,11 @@
 <section *ngIf="!showPage">
-  <div class="container">
-    <p>Aucune tâche pour le moment 🙌</p>
+  <div class=" container">
+   <p>Aucune tâche pour le moment 🙌</p>
     <button (click)="goToPage2()">{{ label }}</button>
   </div>
 </section>
 <ng-container *ngIf="showPage">
-    <div class= "container">
-      <div class= "deuxListes">
+    <div class= "deuxListes">
       <p>⚠️ Tâche urgentes</p>
      <ul class="scrollable-list">
       <li *ngFor="let task of urgentList">
@@ -24,5 +23,5 @@
       </ul>
     </div>
     </div>
-  </div>
+
   <ng-container> 
